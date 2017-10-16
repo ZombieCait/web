@@ -1,13 +1,11 @@
 ﻿@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
 @{
-    ViewData["Title"] = "Анимация в css";
 }
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] </title>
       
     <environment names="Development">
         <link rel="shortcut icon" href="~/images/favicon.png" type="image/png"/>
@@ -27,6 +25,8 @@
 <body>
     <div class="navbar">
         <div class="navbar-inner">
+            
+            <h4><center>@RenderBody()</center></h4>
             <div class="container">
                 <a href="#" class="brand">
                 </a>
@@ -46,14 +46,12 @@
                         <li><a href="#animation-direction">animation-direction</a></li>
                         <li><a href="#animation-fill-mode">animation-fill-mode</a></li>
                         <li><a href="#animation-play-state">animation-play-state</a></li>
-                        <li><a href="#create">create</a></li>
-                    </ul>
+                     </ul>
                 </div>
                 <!-- End main navigation -->
             </div>
         </div>
     </div>
-    <h2>@ViewData["Title"] </h2>
     <!-- Start keyframes section -->
     <div id="keyframes">
         <div class="container">
@@ -110,7 +108,7 @@
                         <td><kbd>initial</kbd></td>
                         <td>Устанавливает значение свойства в значение по умолчанию.</td>
                     </tr>
-                    <tr>
+                   <tr>
                         <td><kbd>inherit</kbd></td>
                         <td>Наследует значение свойства от родительского элемента.</td>
                     </tr>
@@ -412,13 +410,8 @@
 
         </div>
     </div>
-    <div id="create">
-        <div class="container">
-        </div>
-    </div>
-
-    <div class="container body-content">
-        @RenderBody()
+    <div class="container">
+        
         <hr />
         
         <footer>
@@ -429,19 +422,11 @@
     <!-- ScrollUp button end -->
     <!-- Include javascript -->
     <script src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.mixitup.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.js"></script>
     <script type="text/javascript" src="js/jquery.cslider.js"></script>
     <script type="text/javascript" src="js/jquery.placeholder.js"></script>
-    <script type="text/javascript" src="js/jquery.inview.js"></script>
-    <!-- Load google maps api and call initializeMap function defined in app.js -->
-    <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap"></script>
-    <!-- css3-mediaqueries.js for IE8 or older -->
-    <!--[if lt IE 9]>
-        <script src="js/respond.min.js"></script>
-    <![endif]-->
+    
     <script type="text/javascript" src="js/app.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
