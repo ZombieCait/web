@@ -54,12 +54,12 @@ p {
 .navbar {
     background: #181A1C;
     margin-bottom:0;
-    min-height:70px;
+    min-height:60px;
 }
 
 .navbar-fixed-top {
     min-height:60px;
-    height:60px;
+    height:130px;
     padding-top:0;
 }
 .navbar-inner {

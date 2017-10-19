@@ -56,7 +56,7 @@
         }
 
         // Get container scroll position
-        var fromTop = $(this).scrollTop() + topMenuHeight + 10;
+        var fromTop = $(this).scrollTop() + topMenuHeight -63 + 10;
 
         // Get id of current scroll item
         var cur = scrollItems.map(function () {
@@ -106,7 +106,7 @@
                         topMenu.parent().attr('style', 'height:0px').removeClass('in'); //Close navigation
                         $('.navbar .btn-navbar').addClass('collapsed');
 
-                        var targetOffset = $target.offset().top - 63;
+                        var targetOffset = $target.offset().top - 2*63;
                         $('html, body').animate({
                             scrollTop: targetOffset
                         }, 800);
