@@ -40,9 +40,9 @@
                         <li><a href="#animation-delay">animation-delay</a></li>
                         <li><a href="#animation-iteration-count">animation-iteration-count</a></li>
                         <li><a href="#animation-direction">animation-direction</a></li>
-                        <li><a href="#animation-fill-mode">animation-fill-mode</a></li>
                         <li><a href="#animation-play-state">animation-play-state</a></li>
-                     </ul>
+                        <li><a href="#animation-fill-mode">animation-fill-mode</a></li>
+                   </ul>
                 </div>
                 <!-- End main navigation -->
             </div>
@@ -54,7 +54,9 @@
     <div id="keyframes">
         <div class="container">
             <h3 id="keyframes">1. Правило &#64;keyframes</h3>
-            <div class="cp_embed_wrapper"><iframe id="cp_embed_qaErzz" src="//codepen.io/nazarelen/embed/qaErzz?height=300&amp;theme-id=5012&amp;slug-hash=qaErzz&amp;default-tab=result&amp;user=nazarelen&amp;pen-title=square%20loader" scrolling="no" frameborder="0" height="300" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="square loader" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div>
+            <p data-height="265" data-theme-id="0" data-slug-hash="eGXZyj" data-default-tab="css,result" data-user="zombiecait" data-embed-version="2" data-pen-title="eGXZyj" class="codepen">See the Pen <a href="https://codepen.io/zombiecait/pen/eGXZyj/">eGXZyj</a> by zombiecait (<a href="https://codepen.io/zombiecait"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            @*<div class="cp_embed_wrapper"><iframe id="cp_embed_qaErzz" src="//codepen.io/nazarelen/embed/qaErzz?height=300&amp;theme-id=5012&amp;slug-hash=qaErzz&amp;default-tab=result&amp;user=nazarelen&amp;pen-title=square%20loader" scrolling="no" frameborder="0" height="300" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="square loader" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div>*@
             <p>Создание анимации начинается с установки <b>ключевых кадров</b> правила <kbd>&#64;keyframes</kbd>. Кадры определяют, какие свойства на каком шаге будут анимированы. Каждый кадр может включать один или более блоков объявления из одного или более пар свойств и значений. Правило <kbd>&#64;keyframes</kbd> содержит имя анимации элемента, которое связывает правило и блок объявления элемента. </p>
             <pre class="lang:css decode:true ">&#64;keyframes shadow {
             from {text-shadow: 0 0 3px black;}
@@ -77,7 +79,7 @@
             <pre class="lang:css decode:true ">h1 {
             font-size: 3.5em;
             color: darkmagenta;
-            animation: shadow  2s infinite ease-in-out;
+            animation: shadow  2s;
             }</pre>
         </div>
     </div>
@@ -145,7 +147,8 @@
                 </tbody>
             </table>
             <p><b>Синтаксис</b></p>
-            <pre class="lang:css decode:true ">div {animation-duration: 2s;}</pre>
+            <p data-height="265" data-theme-id="0" data-slug-hash="ZXPOLN" data-default-tab="css,result" data-user="zombiecait" data-embed-version="2" data-pen-title="ZXPOLN" class="codepen">See the Pen <a href="https://codepen.io/zombiecait/pen/ZXPOLN/">ZXPOLN</a> by zombiecait (<a href="https://codepen.io/zombiecait"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
         </div>
     </div>
     <div id="animation-timing-function">
@@ -183,7 +186,7 @@
                     </tr>
                     <tr>
                         <td><kbd>cubic-bezier(x1, y1, x2, y2)</kbd></td>
-                        <td>Позволяет вручную установить значения от 0 до 1. <a target="_blank" rel="nofollow" href="https://html5book.ru/goto/http://roblaplaca.com/examples/bezierBuilder/" class="site">На этом сайте</a> вы сможете построить любую траекторию скорости изменения анимации.</td>
+                        <td>Позволяет вручную установить значения от 0 до 1. <</td>
                     </tr>
                     <tr>
                         <td><kbd>step-start</kbd></td>
@@ -208,14 +211,15 @@
                 </tbody>
             </table>
             <p><b>Синтаксис</b></p>
-            <pre class="lang:css decode:true ">div {animation-timing-function: linear;}</pre>
+            <p data-height="265" data-theme-id="0" data-slug-hash="xXBOdw" data-default-tab="css,result" data-user="zombiecait" data-embed-version="2" data-pen-title="xXBOdw" class="codepen">See the Pen <a href="https://codepen.io/zombiecait/pen/xXBOdw/">xXBOdw</a> by zombiecait (<a href="https://codepen.io/zombiecait"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
         </div>
     </div>
     <div id="animation-delay">
         <div class="container">
             <h3 id="animation-delay">5. Анимация с задержкой animation-delay</h3>
             <p>Свойство игнорирует анимацию заданное количество времени, что даёт возможность по отдельности запускать каждую анимацию. Отрицательная задержка начинает анимацию с определенного момента внутри её цикла, т.е. со времени, указанного в задержке. Это позволяет применять анимацию к нескольким элементам со сдвигом фазы, изменяя лишь время задержки. </p>
-            <p>Чтобы анимация началась с середины, нужно задать отрицательную задержку, равную половине времени, установленном в <kbd>animation-duration</kbd>. Не наследуется.<p>Свойство игнорирует анимацию заданное количество времени, что даёт возможность по отдельности запускать каждую анимацию. Отрицательная задержка начинает анимацию с определенного момента внутри её цикла, т.е. со времени, указанного в задержке. Это позволяет применять анимацию к нескольким элементам со сдвигом фазы, изменяя лишь время задержки. </p></p>
+            <p>Чтобы анимация началась с середины, нужно задать отрицательную задержку, равную половине времени, установленном в <kbd>animation-duration</kbd>. Не наследуется.</p>
             <table class="t1">
                 <tbody>
                     <tr>
@@ -277,7 +281,8 @@
                 </tbody>
             </table>
             <p><b>Синтаксис</b></p>
-            <pre class="lang:css decode:true ">div {animation-iteration-count: 3;}</pre>
+            <p data-height="265" data-theme-id="0" data-slug-hash="eGXzWq" data-default-tab="css,result" data-user="zombiecait" data-embed-version="2" data-pen-title="eGXzWq" class="codepen">See the Pen <a href="https://codepen.io/zombiecait/pen/eGXzWq/">eGXzWq</a> by zombiecait (<a href="https://codepen.io/zombiecait"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
     </div>
     </div>
     <div id="animation-direction">
@@ -326,9 +331,46 @@
         </div>
         
     </div>
+    <div id="animation-play-state">
+        <div class="container">
+            <h3 id="animation-play-state">8. Проигрывание анимации animation-play-state</h3>
+            <p>Свойство управляет проигрыванием и остановкой анимации. Остановка анимации внутри цикла возможна через использование этого свойства в скрипте JavaScript. Также можно останавливать анимацию при наведении курсора мыши на объект — состояние <kbd>:hover</kbd>. Не наследуется.</p>
+            <table class="t1">
+                <tbody>
+                    <tr>
+                        <th colspan="2">animation-play-state</th>
+                    </tr>
+                    <tr>
+                        <td>Значения:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><kbd>paused</kbd></td>
+                        <td>Останавливает анимацию.</td>
+                    </tr>
+                    <tr>
+                        <td><kbd>running</kbd></td>
+                        <td>Значение по умолчанию, означает проигрывание анимации.</td>
+                    </tr>
+                    <tr>
+                        <td><kbd>initial</kbd></td>
+                        <td>Устанавливает значение свойства в значение по умолчанию.</td>
+                    </tr>
+                    <tr>
+                        <td><kbd>inherit</kbd></td>
+                        <td>Наследует значение свойства от родительского элемента.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><b>Синтаксис</b></p>
+               
+            <p data-height="265" data-theme-id="0" data-slug-hash="XeGKaW" data-default-tab="css,result" data-user="zombiecait" data-embed-version="2" data-pen-title="XeGKaW" class="codepen">See the Pen <a href="https://codepen.io/zombiecait/pen/XeGKaW/">XeGKaW</a> by zombiecait (<a href="https://codepen.io/zombiecait"></a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+    </div>
     <div id="animation-fill-mode">
         <div class="container">
-            <h3 id="animation-fill-mode">10. Состояние элемента до и после воспроизведения анимации animation-fill-mode</h3>
+            <h3 id="animation-fill-mode">9. Состояние элемента до и после воспроизведения анимации animation-fill-mode</h3>
             <p>Свойство определяет порядок применения определенных в <kbd>&#64;keyframes</kbd> стилей к объекту. Не наследуется.</p>
             <table class="t1">
                 <tbody>
@@ -371,43 +413,7 @@
 
         </div>
     </div>
-    <div id="animation-play-state">
-        <div class="container">
-            <h3 id="animation-play-state">9. Проигрывание анимации animation-play-state</h3>
-            <p>Свойство управляет проигрыванием и остановкой анимации. Остановка анимации внутри цикла возможна через использование этого свойства в скрипте JavaScript. Также можно останавливать анимацию при наведении курсора мыши на объект — состояние <kbd>:hover</kbd>. Не наследуется.</p>
-            <table class="t1">
-                <tbody>
-                    <tr>
-                        <th colspan="2">animation-play-state</th>
-                    </tr>
-                    <tr>
-                        <td>Значения:</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><kbd>paused</kbd></td>
-                        <td>Останавливает анимацию.</td>
-                    </tr>
-                    <tr>
-                        <td><kbd>running</kbd></td>
-                        <td>Значение по умолчанию, означает проигрывание анимации.</td>
-                    </tr>
-                    <tr>
-                        <td><kbd>initial</kbd></td>
-                        <td>Устанавливает значение свойства в значение по умолчанию.</td>
-                    </tr>
-                    <tr>
-                        <td><kbd>inherit</kbd></td>
-                        <td>Наследует значение свойства от родительского элемента.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><b>Синтаксис</b></p>
-            <pre class="lang:css decode:true ">div:hover {animation-play-state: paused;}</pre>
-            <div class="cp_embed_wrapper"><iframe id="cp_embed_EjRagd" src="//codepen.io/nazarelen/embed/EjRagd?height=375&amp;theme-id=5012&amp;slug-hash=EjRagd&amp;default-tab=result&amp;user=nazarelen" scrolling="no" frameborder="0" height="375" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 2" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div>
-
-        </div>
-    </div>
+   
     <div class="container">
         
         <hr />
