@@ -12,18 +12,14 @@ namespace lab01.Controllers
         {
             return View();
         }
-        //public IActionResult Home()
-        //{
-        //    return Home();
-        //}
-        //public IActionResult About()
-        //{
-        //    return About();
-        //}
-        //public IActionResult Contact()
-        //{
-        //    return Contact();
-        //}
+        public IActionResult Report()
+        {
+            return Report();
+        }
+        public IActionResult Contact()
+        {
+            return Contact();
+        }
         public IActionResult Error()
         {
             return View();
