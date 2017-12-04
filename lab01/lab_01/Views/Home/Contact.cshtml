@@ -1,0 +1,81 @@
+﻿@model MessageViewModel
+
+<environment names="Development">
+    <link rel="shortcut icon" href="~/images/favicon.png" type="image/png" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+
+</environment>
+
+@*<div style="margin-left:280px">
+   
+    <form method="post" action="~/ContactController/Send" />
+    <p>
+        <b>Ваш E-mail:</b><br>
+        <input asp-for="Email" type="text" size="60" /><br />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </p>
+    <p>
+        <b>Тема сообщения:</b><br>
+        <input asp-for="Subject" type="text" size="60" /><br />
+        <span asp-validation-for="Subject" class="text-danger"></span>
+    </p>
+    <p>
+        <b>Текст сообщения:</b><br>
+        <textarea asp-for="Text" cols="61" rows="5" wrap="soft"><</textarea><br />
+        <span asp-validation-for="Text" class="text-danger"></span>
+    </p>
+    <p style="font:18px arial">
+        <input type="submit" value="Отправить">
+    </p>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>*@
+
+
+<form asp-action="Send">
+    <div class="form-horizontal">
+        <h3><b>Обратная связь</b></h3>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="EmailAddress" class="col-md-1 control-label"></label>
+            <div class="col-md-11">
+                <input asp-for="EmailAddress" class="form-control" type="email" />
+                <span asp-validation-for="EmailAddress" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Subject" class="col-md-1 control-label">Тема</label>
+            <div class="col-md-11">
+                <input asp-for="Subject" class="form-control" type="text" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Text" class="col-md-1 control-label">Текст</label>
+            <div class="col-md-11">
+                <textarea asp-for="Text" class="form-control" style="min-height:100px;resize:vertical"></textarea>
+                <span asp-validation-for="Text" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-1 col-md-2">
+                <input type="submit" value="Отправить" class="btn btn-default" style="margin-bottom: 12px; width: 100%" />
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
