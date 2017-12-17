@@ -1,0 +1,22 @@
+c:\users\cait\source\repos\lab_02\lab_02\obj\Debug\netcoreapp2.0\lab_02.csprojResolveAssemblyReference.cache
+c:\users\cait\source\repos\lab_02\lab_02\obj\Debug\netcoreapp2.0\lab_02.csproj.CoreCompileInputs.cache
+c:\users\cait\source\repos\lab_02\lab_02\obj\Debug\netcoreapp2.0\lab_02.AssemblyInfoInputs.cache
+c:\users\cait\source\repos\lab_02\lab_02\obj\Debug\netcoreapp2.0\lab_02.AssemblyInfo.cs
+c:\users\cait\source\repos\lab_02\lab_02\bin\Debug\netcoreapp2.0\lab_02.deps.json
+c:\users\cait\source\repos\lab_02\lab_02\bin\Debug\netcoreapp2.0\lab_02.runtimeconfig.json
+c:\users\cait\source\repos\lab_02\lab_02\bin\Debug\netcoreapp2.0\lab_02.runtimeconfig.dev.json
+c:\users\cait\source\repos\lab_02\lab_02\bin\Debug\netcoreapp2.0\lab_02.dll
+c:\users\cait\source\repos\lab_02\lab_02\bin\Debug\netcoreapp2.0\lab_02.pdb
+c:\users\cait\source\repos\lab_02\lab_02\obj\Debug\netcoreapp2.0\lab_02.dll
+c:\users\cait\source\repos\lab_02\lab_02\obj\Debug\netcoreapp2.0\lab_02.pdb
+F:\учеба\4 курс\web\lab_02\lab_02\bin\Debug\netcoreapp2.0\lab_02.deps.json
+F:\учеба\4 курс\web\lab_02\lab_02\bin\Debug\netcoreapp2.0\lab_02.runtimeconfig.json
+F:\учеба\4 курс\web\lab_02\lab_02\bin\Debug\netcoreapp2.0\lab_02.runtimeconfig.dev.json
+F:\учеба\4 курс\web\lab_02\lab_02\bin\Debug\netcoreapp2.0\lab_02.dll
+F:\учеба\4 курс\web\lab_02\lab_02\bin\Debug\netcoreapp2.0\lab_02.pdb
+F:\учеба\4 курс\web\lab_02\lab_02\obj\Debug\netcoreapp2.0\lab_02.csprojResolveAssemblyReference.cache
+F:\учеба\4 курс\web\lab_02\lab_02\obj\Debug\netcoreapp2.0\lab_02.csproj.CoreCompileInputs.cache
+F:\учеба\4 курс\web\lab_02\lab_02\obj\Debug\netcoreapp2.0\lab_02.AssemblyInfoInputs.cache
+F:\учеба\4 курс\web\lab_02\lab_02\obj\Debug\netcoreapp2.0\lab_02.AssemblyInfo.cs
+F:\учеба\4 курс\web\lab_02\lab_02\obj\Debug\netcoreapp2.0\lab_02.dll
+F:\учеба\4 курс\web\lab_02\lab_02\obj\Debug\netcoreapp2.0\lab_02.pdb

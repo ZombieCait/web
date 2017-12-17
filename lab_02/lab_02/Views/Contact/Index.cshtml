@@ -1,0 +1,44 @@
+﻿
+@model MessageViewModel
+@{
+    ViewData["Title"] = "Контактная форма";
+}
+
+<h2 style="margin-top: 30px">Контактная форма</h2>
+
+<div class="container body-content">
+        <div class="container">
+            <form asp-action="Send">
+                <div class="form-horizontal">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="EmailAddress" class="col-md-1 control-label" >Email</label>
+                        <div class="col-md-11">
+                            <input asp-for="EmailAddress" class="form-control" type="email" />
+                            <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Subject" class="col-md-1 control-label" >Тема</label>
+                        <div class="col-md-11">
+                            <input asp-for="Subject" class="form-control" type="text" />
+                            <span asp-validation-for="Subject" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Text" class="col-md-1 control-label" >Текст</label>
+                        <div class="col-md-11">
+                            <textarea asp-for="Text" class="form-control" style="min-height:200px; resize:vertical"></textarea>
+                            <span asp-validation-for="Text" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-1 col-md-2">
+                            <input type="submit" value="Отправить" class="btn btn-default" style="inline-size: 200px; background: #181A1C; color: #FFFFFF;border: 0px;margin-top: 10px;">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
