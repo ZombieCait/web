@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using lab_02.Models;
 namespace lab_02
 {
     public class Startup
@@ -14,6 +14,7 @@ namespace lab_02
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            SMTPViewModel.LoadSettings(configuration);
         }
 
         public IConfiguration Configuration { get; }
