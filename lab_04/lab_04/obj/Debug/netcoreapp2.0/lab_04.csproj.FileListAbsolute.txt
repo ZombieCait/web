@@ -1,0 +1,11 @@
+F:\учеба\4 курс\web\lab_04\lab_04\obj\Debug\netcoreapp2.0\lab_04.csprojResolveAssemblyReference.cache
+F:\учеба\4 курс\web\lab_04\lab_04\obj\Debug\netcoreapp2.0\lab_04.csproj.CoreCompileInputs.cache
+F:\учеба\4 курс\web\lab_04\lab_04\obj\Debug\netcoreapp2.0\lab_04.AssemblyInfoInputs.cache
+F:\учеба\4 курс\web\lab_04\lab_04\obj\Debug\netcoreapp2.0\lab_04.AssemblyInfo.cs
+F:\учеба\4 курс\web\lab_04\lab_04\bin\Debug\netcoreapp2.0\lab_04.deps.json
+F:\учеба\4 курс\web\lab_04\lab_04\bin\Debug\netcoreapp2.0\lab_04.runtimeconfig.json
+F:\учеба\4 курс\web\lab_04\lab_04\bin\Debug\netcoreapp2.0\lab_04.runtimeconfig.dev.json
+F:\учеба\4 курс\web\lab_04\lab_04\bin\Debug\netcoreapp2.0\lab_04.dll
+F:\учеба\4 курс\web\lab_04\lab_04\bin\Debug\netcoreapp2.0\lab_04.pdb
+F:\учеба\4 курс\web\lab_04\lab_04\obj\Debug\netcoreapp2.0\lab_04.dll
+F:\учеба\4 курс\web\lab_04\lab_04\obj\Debug\netcoreapp2.0\lab_04.pdb
